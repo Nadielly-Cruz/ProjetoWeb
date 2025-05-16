@@ -2,40 +2,98 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Personagens - AliWiki</title>
+  <title>AliWiki</title>
+  <link rel="icon" href="img\ivanofc.png" type="image/png">
   <link href="css/geral.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    /* Animação para os personagens */
+    .personagem {
+      display: flex;
+      align-items: center;
+      background-color: #301934;
+      padding: 20px;
+      border-radius: 12px;
+      border: 2px solid #8a2be2;
+      margin-bottom: 20px;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+
+    .personagem:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(138, 43, 226, 0.6);
+    }
+
+    .personagem img {
+      width: 150px;
+      height: auto;
+      border-radius: 8px;
+      margin-right: 20px;
+      transition: transform 0.4s ease;
+    }
+
+    .personagem:hover img {
+      transform: scale(1.1) rotate(3deg);
+    }
+
+    .personagem h4 {
+      margin: 0 0 10px 0;
+      color: #aafaff;
+      font-size: 22px;
+    }
+
+    .personagem p {
+      margin: 0;
+      color: #dcdcdc;
+      line-height: 1.6;
+      flex: 1;
+      text-align: justify;
+    }
+  </style>
 </head>
 <body>
-
   <div id="corpo">
     <div id="topo">
-      <h2>AliWiki - Personagens</h2>
+      <h2>Personagens</h2>
     </div>
 
     <div id="menu">
-      <div id="botao1"><i class="fas fa-home"></i> Início</div>
-      <div id="botao2"><i class="fas fa-users"></i> Personagens</div>
-      <div id="botao3"><i class="fas fa-music"></i> Músicas</div>
-      <div id="botao4"><i class="fas fa-image"></i> Galeria</div>
-      <div id="botao5"><i class="fas fa-video"></i> Vídeos</div>
+      <a href="index.html" class="menu-link"><i class="fas fa-home"></i> Início</a>
+      <a href="botao2.html" class="menu-link"><i class="fas fa-users"></i> Personagens</a>
+      <a href="botao3.html" class="menu-link"><i class="fas fa-music"></i> Músicas</a>
+      <a href="botao4.html" class="menu-link"><i class="fas fa-image"></i> Galeria</a>
+      <a href="botao5.html" class="menu-link"><i class="fas fa-video"></i> Videoclipes</a>
     </div>
     
-    <div id="meio">
-      <div id="esquerda">
-        <img src="img/personagem1.jpg" alt="Personagem" class="imagem-bloco">
+    <div id="conteudo">
+      <div class="personagem">
+        <img src="img\ivan.jpg" alt="ivan" class="imagem-bloco">
+        <h4>Ivan</h4>
+        <p>Descrição breve do Personagem 1. Adicione uma introdução ou curiosidade aqui.</p>
       </div>
-
-      <div id="centro">
-        <iframe width="100%" height="100%" 
-          src="https://www.youtube.com/embed/SUExDjE8C4U" 
-          title="Personagem Apresentação" 
-          frameborder="0" allowfullscreen>
-        </iframe>
+      <div class="personagem">
+        <img src="img\till.jpg" alt="till" class="imagem-bloco">
+        <h4>Till</h4>
+        <p>Descrição breve do Personagem 2. Adicione uma introdução ou curiosidade aqui.</p>
       </div>
-
-      <div id="direita">
-        <img src="img/personagem2.jpg" alt="Personagem 2" class="imagem-bloco">
+      <div class="personagem">
+        <img src="img\hyuna.jpg" alt="hyuna" class="imagem-bloco">
+        <h4>Hyuna</h4>
+        <p>Descrição breve do Personagem 3. Adicione uma introdução ou curiosidade aqui.</p>
+      </div>
+      <div class="personagem">
+        <img src="img\luka.jpg" alt="luka" class="imagem-bloco">
+        <h4>Luka</h4>
+        <p>Descrição breve do Personagem 3. Adicione uma introdução ou curiosidade aqui.</p>
+      </div><div class="personagem">
+        <img src="img\sua.jpg" alt="sua" class="imagem-bloco">
+        <h4>Sua</h4>
+        <p>Descrição breve do Personagem 3. Adicione uma introdução ou curiosidade aqui.</p>
+      </div><div class="personagem">
+        <img src="img\mizi.jpg" alt="mizi" class="imagem-bloco">
+        <h4>Mizi</h4>
+        <p>Descrição breve do Personagem 3. Adicione uma introdução ou curiosidade aqui.</p>
       </div>
     </div>
 
@@ -43,6 +101,5 @@
       <p><i class="fas fa-user-astronaut"></i> © 2025 AliWiki</p>
     </div>
   </div>
-
 </body>
 </html>

@@ -2,42 +2,61 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Projeto</title>
+  <title>AliWiki</title>
+  <link rel="icon" href="img\ivanofc.png" type="image/png">
   <link href="css/geral.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    .video-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+    }
+
+    .video-container iframe {
+      width: 320px;
+      height: 180px;
+      border-radius: 12px;
+      border: 2px solid #8a2be2;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+
+    .video-container iframe:hover {
+      transform: scale(1.05) rotate(-1deg);
+      box-shadow: 0 0 20px rgba(138, 43, 226, 0.6);
+    }
+  </style>
 </head>
 <body>
-
   <div id="corpo">
     <div id="topo">
-      <h2>AliWiki</h2>
+      <h2>Videoclipes</h2>
     </div>
 
     <div id="menu">
-      <div id="botao1"><i class="fas fa-home"></i> Início</div>
-      <div id="botao2"><i class="fas fa-users"></i> Personagens</div>
-      <div id="botao3"><i class="fas fa-music"></i> Músicas</div>
-      <div id="botao4"><i class="fas fa-image"></i> Galeria</div>
-      <div id="botao5"><i class="fas fa-video"></i> Vídeos</div>
+      <a href="index.html" class="menu-link"><i class="fas fa-home"></i> Início</a>
+      <a href="botao2.html" class="menu-link"><i class="fas fa-users"></i> Personagens</a>
+      <a href="botao3.html" class="menu-link"><i class="fas fa-music"></i> Músicas</a>
+      <a href="botao4.html" class="menu-link"><i class="fas fa-image"></i> Galeria</a>
+      <a href="botao5.html" class="menu-link"><i class="fas fa-video"></i> Videoclipes</a>
     </div>
     
-    <div id="meio">
-      <div id="esquerda">
-        <img src="img/cpy (1).jpg" alt="Alien" class="imagem-bloco">
-      </div>
+    <div id="conteudo">
+      <h3>Clipes e Vídeos</h3>
+      <div class="video-container">
+        <iframe src="https://youtu.be/qQlVtAiFARI?si=5rMwsKtuUZCyavB-" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe src="https://youtu.be/BEEp4WBaD7w?si=RqwzT3LpETNyq7iC" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe src="https://youtu.be/2cFnfD4iZzM?si=ZYRMGCyOTt4QKufu" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe src="https://youtu.be/VgPo3q01kbg?si=oOMm97xbamWURIVz" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe src="https://youtu.be/BiD7u0Svsvk?si=xLZfuKW0N5O9K8Uj" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe src="https://youtu.be/0XGAV1weF00?si=IFy9LG3A3bBaRnBB" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe src="https://youtu.be/DIaeHN3sNtk?si=zGH0GDd7pSe1EE_f" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe src="https://youtu.be/SV9SwKd6J3w?si=oW4du_Du66QOv-Ns" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe src="https://youtu.be/4Dr7HljrsoQ?si=k9ACePIjJoWKbadg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe src="https://youtu.be/rrngM9DmDfk?si=J7zBqtkK-niPO1Cx" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-      <div id="centro">
-        <iframe width="100%" height="100%" 
-          src="https://www.youtube.com/embed/vYikmsPVq_c" 
-          title="Alien Stage Prologue" 
-          frameborder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-          allowfullscreen>
-        </iframe>
-      </div>
-
-      <div id="direita">
-        <img src="img/poster.jpg" alt="Poster" class="imagem-bloco">
       </div>
     </div>
 
@@ -45,6 +64,5 @@
       <p><i class="fas fa-user-astronaut"></i> © 2025 AliWiki</p>
     </div>
   </div>
-
 </body>
 </html>

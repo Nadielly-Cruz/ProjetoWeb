@@ -2,42 +2,56 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Projeto</title>
+  <title>AliWiki</title>
+  <link rel="icon" href="img\ivanofc.png" type="image/png">
   <link href="css/geral.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    .galeria {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+    }
+
+    .galeria img {
+      width: 220px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 12px;
+      border: 2px solid #8a2be2;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+
+    .galeria img:hover {
+      transform: scale(1.05) rotate(2deg);
+      box-shadow: 0 0 20px rgba(138, 43, 226, 0.6);
+    }
+  </style>
 </head>
 <body>
-
   <div id="corpo">
     <div id="topo">
-      <h2>AliWiki</h2>
+      <h2>Galeria</h2>
     </div>
 
     <div id="menu">
-      <div id="botao1"><i class="fas fa-home"></i> Início</div>
-      <div id="botao2"><i class="fas fa-users"></i> Personagens</div>
-      <div id="botao3"><i class="fas fa-music"></i> Músicas</div>
-      <div id="botao4"><i class="fas fa-image"></i> Galeria</div>
-      <div id="botao5"><i class="fas fa-video"></i> Vídeos</div>
+      <a href="index.html" class="menu-link"><i class="fas fa-home"></i> Início</a>
+      <a href="botao2.html" class="menu-link"><i class="fas fa-users"></i> Personagens</a>
+      <a href="botao3.html" class="menu-link"><i class="fas fa-music"></i> Músicas</a>
+      <a href="botao4.html" class="menu-link"><i class="fas fa-image"></i> Galeria</a>
+      <a href="botao5.html" class="menu-link"><i class="fas fa-video"></i> Videoclipes</a>
     </div>
     
-    <div id="meio">
-      <div id="esquerda">
-        <img src="img/cpy (1).jpg" alt="Alien" class="imagem-bloco">
-      </div>
-
-      <div id="centro">
-        <iframe width="100%" height="100%" 
-          src="https://www.youtube.com/embed/vYikmsPVq_c" 
-          title="Alien Stage Prologue" 
-          frameborder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-          allowfullscreen>
-        </iframe>
-      </div>
-
-      <div id="direita">
-        <img src="img/poster.jpg" alt="Poster" class="imagem-bloco">
+    <div id="conteudo">
+      <h3>Galeria de Imagens</h3>
+      <div class="galeria">
+        <img src="img/galeria1.jpg" alt="Imagem 1">
+        <img src="img/galeria2.jpg" alt="Imagem 2">
+        <img src="img/galeria3.jpg" alt="Imagem 3">
+        <img src="img/galeria4.jpg" alt="Imagem 4">
+        <img src="img/galeria5.jpg" alt="Imagem 5">
       </div>
     </div>
 
@@ -45,6 +59,5 @@
       <p><i class="fas fa-user-astronaut"></i> © 2025 AliWiki</p>
     </div>
   </div>
-
 </body>
 </html>

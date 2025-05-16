@@ -2,42 +2,75 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Projeto</title>
+  <title>AliWiki</title>
+  <link rel="icon" href="img\ivanofc.png" type="image/png">
   <link href="css/geral.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    .musica {
+      background-color: #301934;
+      padding: 20px;
+      border-radius: 12px;
+      border: 2px solid #8a2be2;
+      margin-bottom: 20px;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      text-align: center;
+    }
+
+    .musica:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(138, 43, 226, 0.6);
+    }
+
+    .musica h4 {
+      color: #aafaff;
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    .musica p {
+      color: #dcdcdc;
+      line-height: 1.6;
+    }
+
+    .musica audio {
+      width: 100%;
+      margin-top: 15px;
+    }
+  </style>
 </head>
 <body>
-
   <div id="corpo">
     <div id="topo">
-      <h2>AliWiki</h2>
+      <h2>Músicas</h2>
     </div>
 
     <div id="menu">
-      <div id="botao1"><i class="fas fa-home"></i> Início</div>
-      <div id="botao2"><i class="fas fa-users"></i> Personagens</div>
-      <div id="botao3"><i class="fas fa-music"></i> Músicas</div>
-      <div id="botao4"><i class="fas fa-image"></i> Galeria</div>
-      <div id="botao5"><i class="fas fa-video"></i> Vídeos</div>
+      <a href="index.html" class="menu-link"><i class="fas fa-home"></i> Início</a>
+      <a href="botao2.html" class="menu-link"><i class="fas fa-users"></i> Personagens</a>
+      <a href="botao3.html" class="menu-link"><i class="fas fa-music"></i> Músicas</a>
+      <a href="botao4.html" class="menu-link"><i class="fas fa-image"></i> Galeria</a>
+      <a href="botao5.html" class="menu-link"><i class="fas fa-video"></i> Videoclipes</a>
     </div>
     
-    <div id="meio">
-      <div id="esquerda">
-        <img src="img/cpy (1).jpg" alt="Alien" class="imagem-bloco">
+    <div id="conteudo">
+      <h3>Trilhas Sonoras</h3>
+      <div class="musica">
+        <h4>Música 1</h4>
+        <p>Descrição da música 1. Adicione informações sobre o artista, álbum ou curiosidades aqui.</p>
+        <audio controls>
+          <source src="audio/musica1.mp3" type="audio/mpeg">
+          Seu navegador não suporta o elemento de áudio.
+        </audio>
       </div>
-
-      <div id="centro">
-        <iframe width="100%" height="100%" 
-          src="https://www.youtube.com/embed/vYikmsPVq_c" 
-          title="Alien Stage Prologue" 
-          frameborder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-          allowfullscreen>
-        </iframe>
-      </div>
-
-      <div id="direita">
-        <img src="img/poster.jpg" alt="Poster" class="imagem-bloco">
+      <div class="musica">
+        <h4>Música 2</h4>
+        <p>Descrição da música 2. Adicione informações sobre o artista, álbum ou curiosidades aqui.</p>
+        <audio controls>
+          <source src="audio/musica2.mp3" type="audio/mpeg">
+          Seu navegador não suporta o elemento de áudio.
+        </audio>
       </div>
     </div>
 
@@ -45,6 +78,5 @@
       <p><i class="fas fa-user-astronaut"></i> © 2025 AliWiki</p>
     </div>
   </div>
-
 </body>
 </html>
