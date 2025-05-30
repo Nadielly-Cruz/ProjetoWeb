@@ -10,7 +10,7 @@
     /* Animação para os personagens */
     .personagem {
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       background-color: #301934;
       padding: 20px;
       border-radius: 12px;
@@ -18,6 +18,7 @@
       margin-bottom: 20px;
       transition: transform 0.4s ease, box-shadow 0.4s ease;
       box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      gap: 20px;
     }
 
     .personagem:hover {
@@ -29,12 +30,7 @@
       width: 150px;
       height: auto;
       border-radius: 8px;
-      margin-right: 20px;
-      transition: transform 0.4s ease;
-    }
-
-    .personagem:hover img {
-      transform: scale(1.1) rotate(3deg);
+      flex-shrink: 0;
     }
 
     .personagem h4 {
@@ -44,11 +40,12 @@
     }
 
     .personagem p {
-      margin: 0;
+      margin: 5px 0;
       color: #dcdcdc;
       line-height: 1.6;
-      flex: 1;
       text-align: justify;
+      text-indent: 20px;
+      line-height: 1.6;
     }
   </style>
 </head>
@@ -92,8 +89,15 @@
         <p>Descrição breve do Personagem 3. Adicione uma introdução ou curiosidade aqui.</p>
       </div><div class="personagem">
         <img src="img\mizi.jpg" alt="mizi" class="imagem-bloco">
-        <h4>Mizi</h4>
-        <p>Descrição breve do Personagem 3. Adicione uma introdução ou curiosidade aqui.</p>
+        <p><h4>Mizi</h4></p>
+      <p>
+        22 anos<br>
+        Nasceu em 20 de Agosto<br>
+        162 cm<br>
+        50 kg<br>
+        Sexo: Feminino<br>
+        Dublada por: Rubyeye
+      </p>
       </div>
     </div>
 
