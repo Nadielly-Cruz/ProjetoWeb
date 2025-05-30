@@ -7,25 +7,24 @@
   <link href="css/geral.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
-    .galeria {
+    .video-container {
       display: flex;
       flex-wrap: wrap;
       gap: 15px;
       justify-content: center;
     }
 
-    .galeria img {
-      width: 220px;
-      height: 150px;
-      object-fit: cover;
+    .video-container iframe {
+      width: 320px;
+      height: 180px;
       border-radius: 12px;
       border: 2px solid #8a2be2;
       transition: transform 0.4s ease, box-shadow 0.4s ease;
       box-shadow: 0 0 10px rgba(0,0,0,0.5);
     }
 
-    .galeria img:hover {
-      transform: scale(1.05) rotate(2deg);
+    .video-container iframe:hover {
+      transform: scale(1.05) rotate(-1deg);
       box-shadow: 0 0 20px rgba(138, 43, 226, 0.6);
     }
   </style>
@@ -33,25 +32,24 @@
 <body>
   <div id="corpo">
     <div id="topo">
-      <h2>Galeria</h2>
+      <img src="img/ivanofc.png" alt="Logo AliWiki" style="width: 80px; margin-bottom: 10px;" />
+      <h2>Videoclipes</h2>
     </div>
 
     <div id="menu">
       <a href="index.html" class="menu-link"><i class="fas fa-home"></i> Início</a>
-      <a href="botao2.html" class="menu-link"><i class="fas fa-users"></i> Personagens</a>
-      <a href="botao3.html" class="menu-link"><i class="fas fa-music"></i> Músicas</a>
-      <a href="botao4.html" class="menu-link"><i class="fas fa-image"></i> Galeria</a>
-      <a href="botao5.html" class="menu-link"><i class="fas fa-video"></i> Videoclipes</a>
+      <a href="botão2.html" class="menu-link"><i class="fas fa-users"></i> Personagens</a>
+      <a href="botão3.html" class="menu-link"><i class="fas fa-music"></i> Músicas</a>
+      <a href="botão4.html" class="menu-link"><i class="fas fa-image"></i> Videoclipes</a>
+      <a href="botão5.html" class="menu-link"><i class="fas fa-envelope"></i> Contato</a>
     </div>
     
     <div id="conteudo">
-      <h3>Galeria de Imagens</h3>
-      <div class="galeria">
-        <img src="img/galeria1.jpg" alt="Imagem 1">
-        <img src="img/galeria2.jpg" alt="Imagem 2">
-        <img src="img/galeria3.jpg" alt="Imagem 3">
-        <img src="img/galeria4.jpg" alt="Imagem 4">
-        <img src="img/galeria5.jpg" alt="Imagem 5">
+      <h3>Videoclipes/h3>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/vYikmsPVq_c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/zs_rXxi0zhM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/DyDfgMOUjCI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </div>
 
