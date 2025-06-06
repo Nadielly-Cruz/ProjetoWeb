@@ -78,16 +78,17 @@
         </p>
       <form id="formulario">
         <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" required>
+        <input type="text" id="nome" name="nome">
 
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+        <input type="email" id="email" name="email">
 
         <label for="telefone">Telefone:</label>
-        <input type="number" id="nome" name="telefone" required>
+        <input type="number" id="telefone" name="telefone">
 
         <label for="mensagem">Mensagem:</label>
-        <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+        <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+
 
         <button type="submit">Enviar</button>
       </form>
@@ -100,19 +101,33 @@
 
   <script>
     document.getElementById('formulario').addEventListener('submit', function(event) {
-      event.preventDefault();
-      const nome = document.getElementById('nome').value;
-      const email = document.getElementById('email').value;
-      const telefone= document.getElementById('telefone').value;
-      const mensagem = document.getElementById('mensagem').value;
+  event.preventDefault();
 
-      if(nome && email && telefone && mensagem) {
-        alert(`Obrigado por enviar, ${nome}! Em breve entraremos em contato.`);
-        this.reset();
-      } else {
-        alert("Por favor, preencha todos os campos.");
-      }
-    });
+  const nome = document.getElementById('nome').value.trim();
+  const email = document.getElementById('email').value.trim();
+  const telefone = document.getElementById('telefone').value.trim();
+  const mensagem = document.getElementById('mensagem').value.trim();
+
+  if (!nome || !email || !telefone || !mensagem) {
+    alert("Por favor, preencha todos os campos.");
+    return;
+  }
+
+  if (!email.includes('@') || !email.includes('.')) {
+    alert("Por favor, insira um email válido.");
+    return;
+  }
+
+  const numeroLimpo = telefone.replace(/\D/g, '');
+  if (numeroLimpo.length < 8) {
+    alert("Por favor, insira um telefone válido com pelo menos 8 números.");
+    return;
+  }
+
+  alert(`Obrigado por enviar, ${nome}! Em breve entraremos em contato.`);
+  this.reset();
+});
+
   </script>
 </body>
 </html>
