@@ -83,6 +83,9 @@
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required>
 
+        <label for="telefone">Telefone:</label>
+        <input type="number" id="nome" name="telefone" required>
+
         <label for="mensagem">Mensagem:</label>
         <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
 
@@ -100,9 +103,10 @@
       event.preventDefault();
       const nome = document.getElementById('nome').value;
       const email = document.getElementById('email').value;
+      const telefone= document.getElementById('telefone').value;
       const mensagem = document.getElementById('mensagem').value;
 
-      if(nome && email && mensagem) {
+      if(nome && email && telefone && mensagem) {
         alert(`Obrigado por enviar, ${nome}! Em breve entraremos em contato.`);
         this.reset();
       } else {
