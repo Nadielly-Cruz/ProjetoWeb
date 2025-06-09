@@ -228,5 +228,48 @@ html, body {
   form {
     width: 95%;
   }
+
+  @media (max-width: 768px) {
+    body {
+      padding: 10px;
+    }
+  
+    form {
+      padding: 20px;
+      margin: 20px auto;
+    }
+  
+    #menu {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .menu-link {
+      display: block;
+      margin: 10px 0;
+      font-size: 18px;
+    }
+  
+    #topo img {
+      width: 60px;
+    }
+  
+    #topo h2 {
+      font-size: 22px;
+      text-align: center;
+    }
+  
+    input, textarea {
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+    button {
+      font-size: 15px;
+      padding: 10px 20px;
+    }
+  }
+  
 }
 
