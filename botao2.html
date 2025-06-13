@@ -8,13 +8,14 @@
   <link href="css/geral.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
-
     .form {
       width: 90%;
       max-width: 600px;
     }
     .personagem {
-      display: flex;
+      display: block;
+      width: 100%;
+      margin-bottom: 20px;
       align-items: flex-start;
       background-color: #301934;
       padding: 20px;
@@ -32,8 +33,9 @@
     }
 
     .personagem img {
-      width: 150px;
+      width: 100px;
       height: auto;
+      display: block;
       border-radius: 8px;
       flex-shrink: 0;
     }
@@ -45,6 +47,7 @@
     }
 
     .personagem p {
+      word-wrap: break-word;
       margin: 5px 0;
       color: #dcdcdc;
       line-height: 1.6;
